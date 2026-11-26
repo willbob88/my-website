@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will Studio — Original Paintings in Oil, Acrylic &amp; Watercolor</title>
+  <meta
+    name="description"
+    content="Explore original fine art paintings in oil, acrylic, and watercolor. View gallery works, inquire about originals, and join the archival print release list."
+  />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Will Studio — Original Paintings &amp; Gallery" />
+  <meta
+    property="og:description"
+    content="Original fine art paintings in oil, acrylic, and watercolor. Archival prints coming soon."
+  />
+  <meta property="og:image" content="images/oil-golden-meadow.jpg" />
+
+  <!-- Curated Museum Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand-mark" id="brand-link">
+        <span class="brand-name" id="header-artist-name">Will Studio</span>
+        <span class="brand-sub" id="header-location">Original Fine Art</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#prints" class="nav-link">Prints</a>
+        <a href="#about" class="nav-link">Studio</a>
+        <a href="#contact" class="nav-link">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Exhibition Opening -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Oil &middot; Acrylic &middot; Watercolor</p>
+          <h1 id="hero-heading">Paintings shaped by quiet light and natural texture.</h1>
+          <p class="hero-lead" id="hero-tagline">
+            Original paintings in oil, acrylic, and watercolor — capturing quiet coastal light, natural forms, and unhurried moments.
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary" id="hero-explore-btn">Explore Gallery</a>
+            <a href="#prints" class="btn btn-secondary" id="hero-prints-btn">Archival Prints</a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Originals</span>
+              <span class="hero-meta-value" id="hero-works-count">6 Selected Works</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Materials</span>
+              <span class="hero-meta-value">Belgian Linen &amp; Cotton Rag</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Fine Art Prints</span>
+              <span class="hero-meta-value" id="hero-prints-status">Releasing Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <button
+            type="button"
+            class="featured-frame"
+            id="featured-artwork-trigger"
+            aria-label="Inspect featured painting"
+          >
+            <img
+              id="featured-artwork-img"
+              src="images/oil-golden-meadow.jpg"
+              alt="Late Light Over the Headland — Oil on Belgian linen"
+            />
+          </button>
+          <div class="featured-placard">
+            <span class="featured-placard-title" id="featured-artwork-title">Late Light Over the Headland</span>
+            <span class="featured-placard-meta" id="featured-artwork-meta">Oil on Belgian linen &middot; 24 × 32 in</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Exhibition Grid -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-intro">
+            <p class="eyebrow">Selected Works</p>
+            <h2 id="gallery-heading">The Gallery</h2>
+            <p class="section-subtitle">
+              Select any painting to inspect brushwork up close, read studio notes, inquire about originals, or view print options.
+            </p>
+          </div>
+
+          <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter artworks by medium">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Archival Prints (Print-on-Demand Ready) -->
+    <section class="prints-section" id="prints" aria-labelledby="prints-heading">
+      <div class="container prints-grid">
+        <div class="prints-copy">
+          <p class="eyebrow" id="prints-eyebrow">Archival Editions &middot; Coming Soon</p>
+          <h2 id="prints-heading">Museum-quality giclée prints, made to order.</h2>
+          <p id="prints-description">
+            Selected oil, acrylic, and watercolor paintings will soon be offered as archival fine art prints — color-matched to the original canvases and printed on demand on heavyweight cotton rag paper, shipped directly to your door.
+          </p>
+          <div class="hero-actions" id="prints-cta-wrap">
+            <button type="button" class="btn btn-accent" id="join-print-list-btn">
+              Join the Print Launch List
+            </button>
+          </div>
+        </div>
+
+        <div class="prints-specs" aria-label="Archival print specifications">
+          <div class="spec-item">
+            <span class="spec-label">Paper Stock</span>
+            <span class="spec-value">310gsm Museum Cotton Rag</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Ink &amp; Longevity</span>
+            <span class="spec-value">Archival Pigment Giclée</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Fulfillment</span>
+            <span class="spec-value">Printed to Order, Zero Waste</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Framing Ready</span>
+            <span class="spec-value">Standard Gallery Sizes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Artist & Studio -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <figure class="studio-figure" style="margin: 0;">
+          <div class="studio-photo-frame">
+            <img
+              src="images/artist-studio.jpg"
+              alt="Sunlit painter's studio with wooden easel, oil palette, and linen canvases"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="studio-caption">Natural north-facing studio light, linen canvases, and pigments in progress.</figcaption>
+        </figure>
+
+        <div class="about-copy">
+          <p class="eyebrow">About the Studio</p>
+          <h2 id="about-heading">Light, texture, and the quiet rhythm of paint.</h2>
+          <div class="about-body" id="about-paragraphs">
+            <!-- Populated dynamically from SITE_CONFIG -->
+          </div>
+
+          <div class="mediums-list">
+            <div class="medium-item">
+              <h3>Oil</h3>
+              <p>Slow-drying luminous glazes and tactile impasto on primed Belgian linen.</p>
+            </div>
+            <div class="medium-item">
+              <h3>Acrylic</h3>
+              <p>Bold matte planes and expressive layering over raw woven canvas.</p>
+            </div>
+            <div class="medium-item">
+              <h3>Watercolor</h3>
+              <p>Delicate transparent washes and organic granulation on handmade cotton paper.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collector Inquiries -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Collector Inquiries &amp; Waitlist</p>
+          <h2 id="contact-heading">Bring a painting into your space.</h2>
+          <p>
+            Have a question about an available original, custom commission, or want first notice when archival prints open? Send a note directly from here.
+          </p>
+
+          <div class="contact-direct">
+            <div class="contact-direct-row">
+              <span class="contact-direct-label">Studio Email</span>
+              <a href="mailto:hello@yourdomain.com" class="contact-direct-link" id="contact-email-link">
+                hello@yourdomain.com
+              </a>
+            </div>
+            <div class="contact-direct-row" id="contact-instagram-row" hidden>
+              <span class="contact-direct-label">Instagram</span>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="contact-direct-link" id="contact-instagram-link">
+                @studio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="inquiry-form" id="inquiry-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="inquiry-name">Your Name</label>
+              <input id="inquiry-name" name="name" type="text" required placeholder="Jane Doe" />
+            </div>
+            <div class="form-field">
+              <label for="inquiry-email">Email Address</label>
+              <input id="inquiry-email" name="email" type="email" required placeholder="jane@example.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="inquiry-topic">Inquiry Type</label>
+              <select id="inquiry-topic" name="topic">
+                <option value="Print Launch Waitlist">Archival Print Launch Waitlist</option>
+                <option value="Original Painting">Original Painting Inquiry</option>
+                <option value="Commission">Commission Request</option>
+                <option value="General">General Question</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="inquiry-artwork">Artwork (Optional)</label>
+              <input id="inquiry-artwork" name="artwork" type="text" placeholder="e.g. Late Light Over the Headland" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="inquiry-message">Message</label>
+            <textarea
+              id="inquiry-message"
+              name="message"
+              required
+              placeholder="Tell me which piece caught your eye, or let me know you'd like to hear when prints launch."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="inquiry-submit-btn">Send Studio Inquiry</button>
+          <p class="form-feedback" id="inquiry-feedback" role="status" aria-live="polite"></p>
+          <p class="form-note" id="inquiry-mode-note">
+            Opens a pre-filled email in your mail app — no third-party form subscriptions required.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p style="margin: 0;">&copy; <span id="footer-year">2026</span> <span id="footer-artist-name">Will Studio</span>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#gallery">Gallery</a>
+        <a href="#prints">Prints</a>
+        <a href="#about">Studio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Full-Screen Museum Lightbox Modal -->
+  <div
+    class="lightbox"
+    id="artwork-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightbox-title"
+    aria-hidden="true"
+  >
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close artwork detail">
+        &times;
+      </button>
+
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous painting">
+          &#8592;
+        </button>
+        <img id="lightbox-img" src="" alt="" />
+        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next painting">
+          &#8594;
+        </button>
+      </div>
+
+      <div class="lightbox-info">
+        <div>
+          <p class="eyebrow" id="lightbox-category">Oil Painting</p>
+          <h2 class="lightbox-title" id="lightbox-title">Artwork Title</h2>
+
+          <dl class="lightbox-meta-list">
+            <div class="lightbox-meta-item">
+              <dt>Medium</dt>
+              <dd id="lightbox-medium">—</dd>
+            </div>
+            <div class="lightbox-meta-item">
+              <dt>Dimensions</dt>
+              <dd id="lightbox-dimensions">—</dd>
+            </div>
+            <div class="lightbox-meta-item">
+              <dt>Year</dt>
+              <dd id="lightbox-year">—</dd>
+            </div>
+            <div class="lightbox-meta-item">
+              <dt>Original</dt>
+              <dd id="lightbox-original-status">—</dd>
+            </div>
+          </dl>
+
+          <p class="lightbox-story" id="lightbox-story"></p>
+        </div>
+
+        <div class="lightbox-actions" id="lightbox-actions">
+          <!-- Populated dynamically with smart Print-on-Demand & Original Inquiry buttons -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/artworks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
